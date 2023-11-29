@@ -4,9 +4,7 @@ import re
 
 day = 1
 data = requests.get(f"https://adventofcode.com/2023/day/{day}/input", cookies=cookies).text.split('\n')
-# print(data)
 nums = {"one": 1, "two": 2, "three":3, "four":4, "five":5, "six":6, "seven":7, "eight":8, "nine": 9, "zero":0}
-
 
 def find_first_num(line, factor, nums={}):
     sofar = ""
@@ -18,8 +16,6 @@ def find_first_num(line, factor, nums={}):
             if d[::factor] in sofar:
                 return str(nums[d])
     return "0"
-
-            
 
 part1 = 0
 part2 = 0
