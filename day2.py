@@ -10,6 +10,9 @@ red_start = 12
 green_start = 13
 blue_start = 14
 
+with open("test.txt", "r") as f:
+    data = f.readlines()
+
 starts = {"red": 12, "green": 13, "blue": 14}
 
 def solve1(line):
