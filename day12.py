@@ -44,8 +44,6 @@ def check_valid(line, nums):
     return 1
 
 def get_num_arrangments(line, nums):
-    nums = nums*5
-    line = line*5
     frontier = [(line, 0)]
     ct = 0
     while frontier:
